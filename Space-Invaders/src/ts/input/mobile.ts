@@ -20,7 +20,7 @@ export function init(): InitFunctionOutput {
     getInput,
     setActive,
     setInactive
-  }
+  };
 
   function setActive(ready: () => void) {
     handle.addEventListener('touchstart', onHandleGrab);

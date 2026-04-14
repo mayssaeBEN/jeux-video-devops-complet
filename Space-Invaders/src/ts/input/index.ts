@@ -48,12 +48,12 @@ export function init(source: InputSource, ready: () => void, stop: () => void) {
 
   function getInputFunction(source: InputSource): InitFunctionOutput  {
     switch (source) {
-      case InputSource.Gamepad:
-        return gamepad;
-      case InputSource.Mobile:
-        return mobile;
-      case InputSource.Mouse:
-        return mouse;
+    case InputSource.Gamepad:
+      return gamepad;
+    case InputSource.Mobile:
+      return mobile;
+    case InputSource.Mouse:
+      return mouse;
     }
   }
 }

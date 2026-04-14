@@ -21,11 +21,11 @@ export function init($canvas: HTMLCanvasElement) {
 }
 
 const colors = {
-  enemy: `hsl(120, 100%, 50%)`,
-  particle: `hsl(300, 100%, 50%)`,
-  center: `hsl(260, 100%, 50%)`,
-  player: `hsl(0, 100%, 50%)`,
-  projectile: `hsl(60, 100%, 50%)`,
+  enemy: 'hsl(120, 100%, 50%)',
+  particle: 'hsl(300, 100%, 50%)',
+  center: 'hsl(260, 100%, 50%)',
+  player: 'hsl(0, 100%, 50%)',
+  projectile: 'hsl(60, 100%, 50%)',
   
 };
 
