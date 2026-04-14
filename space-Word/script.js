@@ -1,5 +1,13 @@
-const canvasWidth = document.getElementsByTagName('canvas')[0].clientWidth;
-const canvasHeight = document.getElementsByTagName('canvas')[0].clientHeight;
+let canvasWidth = 0;
+let canvasHeight = 0;
+
+if (typeof document !== "undefined") {
+  const canvasElement = document.getElementsByTagName('canvas')[0];
+  if (canvasElement) {
+    canvasWidth = canvasElement.clientWidth;
+    canvasHeight = canvasElement.clientHeight;
+  }
+} 
 
 const restitution = 0.90;
 let canvas;
@@ -46,7 +54,9 @@ function initAudio() {
 }
 //AUDIO
 
-window.onload = init;
+if (typeof window !== "undefined") {
+  window.onload = init;
+} 
 
 class GameObject {
     constructor (context, x, y, vx, vy) {
@@ -454,4 +464,13 @@ function restartStateGame() {
     startTime
     lastTime = 0
     invencibilityTime = 2000
-}
+} 
+
+if (typeof module !== "undefined") {
+  module.exports = {
+    getRandomInt,
+    rectIntersect,
+    circleIntersect,
+    timeToString
+  };
+} 
