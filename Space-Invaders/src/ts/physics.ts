@@ -79,7 +79,7 @@ function calculate({ input, deltaTime, addPoints }: PhysicsData): PhysicsOutput 
       fireTimer = 0;
       projectiles.push({
         position: { ...toPolarVector(mulFactor(currentPosition, 50)) }
-      })
+      });
     }
 
     spawnTimer += deltaTime;

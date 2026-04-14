@@ -15,13 +15,13 @@ export function init(): InitFunctionOutput {
     bready = ready;
     bstop = stop;
 
-    window.addEventListener("gamepadconnected", onConnected, false);
-    window.addEventListener("gamepaddisconnected", onDisconncted, false);
+    window.addEventListener('gamepadconnected', onConnected, false);
+    window.addEventListener('gamepaddisconnected', onDisconncted, false);
   }
 
   function setInactive() {
-    window.removeEventListener("gamepadconnected", onConnected, false);
-    window.removeEventListener("gamepaddisconnected", onDisconncted, false);
+    window.removeEventListener('gamepadconnected', onConnected, false);
+    window.removeEventListener('gamepaddisconnected', onDisconncted, false);
   }
 
   function onConnected({ gamepad }: GamepadEvent) {
