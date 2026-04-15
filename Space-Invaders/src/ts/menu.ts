@@ -15,7 +15,7 @@ export function init(start: () => void, stop: () => void, inputChange: (source: 
 
   const $radios = document.querySelector('#input-source') as HTMLElement;
 
-  const selectedType = [...$radios.querySelectorAll('input')].find(input => input.value === inputType);
+  const selectedType = [...$radios.querySelectorAll('input')].find(input => input.value == inputType);
   if (selectedType) {
     selectedType.checked = true;
     inputChange(InputSource[inputType]);
@@ -45,7 +45,7 @@ export function init(start: () => void, stop: () => void, inputChange: (source: 
   }
 
   function handleKeyDown({ key }: KeyboardEvent) {
-    if (key === 'Escape') {
+    if (key == 'Escape') {
       if ($menu.hidden) {
         show();
       } else {

@@ -42,14 +42,14 @@ const movePatterns: { [type in Type]: (data: NextPositionData) => PolarVector } 
     const newPos = {
       angle: enemy.position.angle,
       radius: enemy.position.radius - deltaTime * 100
-    };
+    }
     return newPos;
   },
   Spinner({ enemy, deltaTime }: NextPositionData) {
     const newPos = {
       angle: enemy.position.angle + enemy.direction * deltaTime * 1,
       radius: enemy.position.radius - deltaTime * 100
-    };
+    }
     return newPos;
   },
   ZigZag({ enemy, deltaTime }: NextPositionData) {
@@ -57,7 +57,7 @@ const movePatterns: { [type in Type]: (data: NextPositionData) => PolarVector } 
     const newPos = {
       angle,
       radius: enemy.position.radius - deltaTime * 50
-    };
+    }
     return newPos;
   },
   Oscillator({ enemy, deltaTime }: NextPositionData) {
@@ -66,10 +66,10 @@ const movePatterns: { [type in Type]: (data: NextPositionData) => PolarVector } 
     const newPos = {
       angle,
       radius
-    };
+    }
     return newPos;
   }
-};
+}
 
 export function getValue(type: Type): number {
   const values: { [key in Type]: number } = {

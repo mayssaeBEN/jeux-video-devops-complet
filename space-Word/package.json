@@ -1,0 +1,25 @@
+{
+  "name": "space-word",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/jest": "^30.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.58.2",
+    "@typescript-eslint/parser": "^8.58.2",
+    "eslint": "^10.2.0",
+    "eslint-config-google": "^0.14.0",
+    "globals": "^17.5.0",
+    "jest": "^30.3.0",
+    "puppeteer": "^24.40.0",
+    "ts-jest": "^29.4.9"
+  }
+}

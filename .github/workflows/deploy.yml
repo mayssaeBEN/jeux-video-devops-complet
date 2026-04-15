@@ -3,11 +3,8 @@ name: CD - Deploy
 on:
   push:
     branches:
-      - spaceinvaders
+      - main
   workflow_dispatch:
-
-permissions:
-  contents: write
 
 jobs:
   deploy:

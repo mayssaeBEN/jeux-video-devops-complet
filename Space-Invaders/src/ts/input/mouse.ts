@@ -26,7 +26,7 @@ export function init(): InitFunctionOutput {
       canvas.removeEventListener('mouseup', onMouseUp);
       canvas.removeEventListener('mousemove', onMouseMove);
     }
-  };
+  }
 
   function onMouseDown() {
     fire = true;
