@@ -28,3 +28,9 @@ jobs:
 
       - name: Lint
         run: yarn lint
+
+      - name: Tests
+        run: yarn test
+
+      - name: Audit dépendances
+        run: npm audit --audit-level=high || true
