@@ -1,7 +1,6 @@
 module.exports = [
   {
     files: ['*/.js'],
-    ignores: ['node_modules/**'],
     languageOptions: {
       ecmaVersion: 2021,
       globals: {
@@ -20,4 +19,4 @@ module.exports = [
       'no-console': 'warn',
     },
   },
-];
+]; 
