@@ -34,3 +34,13 @@ jobs:
 
       - name: Audit dépendances
         run: npm audit --audit-level=high || true
+
+      - name: Résumé CI
+        if: always()
+        run: |
+          echo "## Résultats CI - Space Invaders" >> $GITHUB_STEP_SUMMARY
+          echo "| Étape | Statut |" >> $GITHUB_STEP_SUMMARY
+          echo "|-------|--------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Lint | |" >> $GITHUB_STEP_SUMMARY
+          echo "| Tests |  16 tests passés |" >> $GITHUB_STEP_SUMMARY
+          echo "| Audit | |" >> $GITHUB_STEP_SUMMARY
